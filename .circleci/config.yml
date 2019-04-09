@@ -9,8 +9,8 @@ jobs:
       # specify the version you desire here
       # - image: circleci/ruby:2.4.2-node-browsers
       - image: circleci/ruby:2.6.0-node
-          environment:
-            BUNDLER_VERSION: 2.0.1
+        environment:
+          BUNDLER_VERSION: 2.0.1
 
     working_directory: ~/ssl-test
 
