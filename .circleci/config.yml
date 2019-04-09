@@ -12,7 +12,7 @@ jobs:
         environment:
           BUNDLER_VERSION: 2.0.1
 
-    working_directory: ~/ssl-test
+    working_directory: /home/circleci/ssl-barth
 
     steps:
       - checkout
