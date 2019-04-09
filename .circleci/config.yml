@@ -42,8 +42,7 @@ jobs:
       - run:
           name: ssh
           command: |
-            ls -la
-            cd .ssh
+            cd ~/.ssh
             ls -la
 
       - deploy:
