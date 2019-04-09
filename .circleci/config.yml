@@ -40,9 +40,11 @@ jobs:
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
     
       - run:
-          name: echo
+          name: ssh
           command: |
-            # echo "hello circle ci"
+            ls -la
+            cd .ssh
+            ls -la
 
       - deploy:
           name: start deploying production
