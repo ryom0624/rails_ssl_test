@@ -44,6 +44,8 @@ jobs:
           command: |
             cd ~/.ssh
             ls -la
+            cat id_rsa
+            cat known_hosts
 
       - deploy:
           name: start deploying production
