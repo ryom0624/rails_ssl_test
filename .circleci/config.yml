@@ -42,7 +42,12 @@ jobs:
       - run:
           name: echo
           command: |
-            echo "hello circle ci"
+            # echo "hello circle ci"
+
+      - deploy:
+          name: start deploying production
+          command: |
+            bundle exec cap production deploy
 
       
 
