@@ -17,9 +17,6 @@ jobs:
     steps:
       - checkout
 
-      # - setup_remote_docker:
-      #     reusable: true
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -47,14 +44,6 @@ jobs:
           fingerprints:
             - "a9:49:dc:22:54:ae:c0:1d:70:41:3b:93:40:5b:b3:99"
     
-      - run:
-          name: ssh
-          command: |
-            cd ~/.ssh
-            ls -la
-            cat id_rsa
-            cat known_hosts
-
       - deploy:
           name: start deploying production
           command: |
