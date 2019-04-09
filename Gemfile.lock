@@ -219,6 +219,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capistrano
+  capistrano-bundler
   capistrano-rails
   capybara (>= 2.15)
   chromedriver-helper
