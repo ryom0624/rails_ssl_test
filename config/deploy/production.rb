@@ -8,11 +8,15 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 set :migration_role, "db"
-server "35.243.82.203", user: "kusanagi", roles: %w{app web db},
+# server "35.243.82.203", user: "kusanagi", roles: %w{app web db},
+#   ssh_options: {
+#     port: 34567
+#   }
+
+server "35.194.121.144", user: "kusanagi", roles: %w{app web db},
   ssh_options: {
     port: 34567
   }
-
 
 
 # role-based syntax
