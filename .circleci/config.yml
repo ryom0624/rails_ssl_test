@@ -17,9 +17,6 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          command: bundler -v
-
       # Download and cache dependencies
       - restore_cache:
           keys:
