@@ -38,6 +38,10 @@ jobs:
           paths:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - add_ssh_keys:
+          fingerprints:
+            - "a9:49:dc:22:54:ae:c0:1d:70:41:3b:93:40:5b:b3:99"
     
       - run:
           name: ssh
