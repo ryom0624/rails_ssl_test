@@ -47,7 +47,8 @@ jobs:
       - deploy:
           name: start deploying production
           command: |
-            bundle exec cap production deploy
+            ROLES=instance1 bundle exec cap production deploy
+            ROLES=instance2 bundle exec cap production deploy
 
       
 

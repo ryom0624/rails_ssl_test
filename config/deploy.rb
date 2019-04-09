@@ -45,7 +45,10 @@ set :keep_releases, 5
 
 after "deploy", "passenger"
 task :passenger do
-  on roles(:web) do
+  on roles(:instance1) do
+    execute "sudo /bin/passenger-config restart-app /home/kusanagi/ssl-barth/current"
+  end
+  on roles(:instance2), wait: 30 do
     execute "sudo /bin/passenger-config restart-app /home/kusanagi/ssl-barth/current"
   end
 end
