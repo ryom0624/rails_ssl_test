@@ -24,7 +24,7 @@ set :deploy_to, "/home/kusanagi/#{fetch(:application)}"
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
-set :linked_files, %w{.env config/master.key config/database.yml"}
+set :linked_files, %w{.env config/master.key config/database.yml}
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
