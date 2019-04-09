@@ -17,6 +17,9 @@ jobs:
     steps:
       - checkout
 
+      - setup_remote_docker:
+          reusable: true
+
       # Download and cache dependencies
       - restore_cache:
           keys:
