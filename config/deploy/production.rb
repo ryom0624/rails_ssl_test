@@ -14,7 +14,7 @@ server "35.243.82.203", user: "kusanagi", roles: %w{app web db instance1},
     port: 34567
   }
 
-server "35.194.121.144", user: "kusanagi", roles: %w{app web db instance2},
+server "35.194.121.144", user: "kusanagi", roles: %w{app web instance2},
   ssh_options: {
     port: 34567
   }
