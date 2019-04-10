@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 set :production
-set :raisl_env, "production"
+set :rails_env, "production"
 set :migration_role, "db"
 server "35.243.82.203", user: "kusanagi", roles: %w{app web db instance1},
   ssh_options: {
