@@ -5,11 +5,11 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['MYSQL_USER'] %>
+  password: <%= ENV['MYSQL_PASS'] %>
   socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
-  password: <%= ENV['MYSQL_DEV_PASS'] %>
   database: ssl-barth_dev
 
 test:
@@ -18,7 +18,5 @@ test:
 
 production:
   <<: *default
-  password: <%= ENV['MYSQL_PRODUCTION_PASS'] %>
-  database: sslbarth_production
   host: <%= ENV['MYSQL_PRIDUCTION_HOST'] %>
-
+  database: sslbarth_production
